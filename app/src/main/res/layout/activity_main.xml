@@ -4,19 +4,46 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="3">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/concurrent_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btn_concurrent_call" />
+
+        <Button
+            android:id="@+id/rxjava_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btn_rxjava_call" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/sample_output"
-            style="@style/Widget.SampleMessage"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="@string/intro_message" />
-    </ScrollView>
+            android:layout_marginLeft="15dp"
+            android:text="@string/title_repeat_count" />
+
+        <EditText
+            android:id="@+id/repeat_count"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="10" />
+
+    </LinearLayout>
 
     <View
         android:layout_width="fill_parent"
