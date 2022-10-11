@@ -198,6 +198,6 @@ class MainActivity : SampleActivityBase() {
         val endCounter = AtomicInteger(0)
         const val LINE_BREAK = "-----------------------------"
         const val CCS_TEST_URL =
-            "https://qa-search.onestore.co.kr/api/common/search?query=킹오브파이터&offset=0&count=20"
+            "https://search.onestore.co.kr/api/common/search?query=킹오브파이터&offset=0&count=20"
     }
 }
